@@ -89,6 +89,7 @@ article{
 aside{
 	display: inline-block;
 	width: 170px;
+	position: fixed;
 }
 
 aside div{
