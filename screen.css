@@ -1,20 +1,37 @@
+/* Textures from www.webtexture.net */
+
 body{
 	margin: 0;
 	width: 100%;
+	background-image: url(texture.jpg);
+	background-repeat: repeat;
 }
 header{
-	background-color: lightgrey;
+	background-image: url(background.jpg);
 	margin: 0;
 	width: 100%;
+	padding: 10px;
 }
 
 section{
-	margin: auto;
+	display: block;
+	margin: 0 auto 0 auto;
 	width: 840px;
+	background: white;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	box-shadow: 5px 5px 5px -5px #cfcfcf;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
 }
 
 h1{
 	text-align: center;
+	color: darkslategrey;
 	font-family: Verdana, Arial, sans-serif;
 }
 nav ul{
@@ -27,18 +44,25 @@ nav ul li{
 nav ul li a{
 	display: block;
 	text-decoration: none;
-	color: grey;
+	color: darkslategrey;
 	font-family: Verdana, Arial, sans-serif;
 	width: 180px;
-	line-height: 50px;
-	background-color: lightgreen;
+	line-height: 30px;
+	background-image : url(background.jpg);
 	text-align: center;
 	vertical-align: middle;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	box-shadow: 5px 5px 5px -5px #cfcfcf;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
 }
 
 nav ul li a:hover{
-	text-decoration: underline;
-	background-color: green;
+	background-image : url(back2.jpg);
 	color: white;
 }
 
@@ -47,18 +71,40 @@ article{
 	width: 600px;
 	position: relative;
 	display:inline-block;
+	padding: 10px;
+	margin: 4px;
+	color: darkslategrey;
+	font-family: Verdana, Arial, sans-serif;
+	background-color: whitesmoke;
+		-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	box-shadow: 5px 5px 5px -5px #cfcfcf;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
 }
 
 aside{
 	display: inline-block;
-	width: 220px;
+	width: 170px;
 }
 
 aside div{
-	height: 160px;
 	margin: 4px;
 	padding: 10px;
-	background-color : lightgreen;
+	background-image : url(background.jpg);
+	color: darkslategrey;
+	font-family: Verdana, Arial, sans-serif;
+	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
+	box-shadow: 5px 5px 5px -5px #cfcfcf;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 blockquote{
@@ -66,6 +112,11 @@ blockquote{
 	font-style: italic;
 	font-family: Times, serif;
 	text-align: center;
+	color: dimgray;
+}
+
+footer{
+	clear:both;
 }
 
 /* Partie Phone/Tablets */
