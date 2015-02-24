@@ -3,11 +3,11 @@
 body{
 	margin: 0;
 	width: 100%;
-	background-image: url(texture.jpg);
+	background-image: url(img/texture.jpg);
 	background-repeat: repeat;
 }
 header{
-	background-image: url(background.jpg);
+	background-image: url(img/background.jpg);
 	margin: 0;
 	width: 100%;
 	padding: 10px;
@@ -48,7 +48,7 @@ nav ul li a{
 	font-family: Verdana, Arial, sans-serif;
 	width: 180px;
 	line-height: 30px;
-	background-image : url(background.jpg);
+	background-image : url(img/background.jpg);
 	text-align: center;
 	vertical-align: middle;
 	-webkit-border-radius: 5px;
@@ -62,7 +62,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	background-image : url(back2.jpg);
+	background-image : url(img/back2.jpg);
 	color: white;
 }
 
@@ -95,7 +95,7 @@ aside{
 aside div{
 	margin: 4px;
 	padding: 10px;
-	background-image : url(background.jpg);
+	background-image : url(img/background.jpg);
 	color: darkslategrey;
 	font-family: Verdana, Arial, sans-serif;
 	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
