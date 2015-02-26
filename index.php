@@ -16,4 +16,8 @@ else if ($_GET['section'] == 'signup')
 {
     include_once('controleur/signup.php');
 }
+else if ($_GET['section'] == 'recherche')
+{
+    include_once('controleur/recherche.php');
+}
 ?>
