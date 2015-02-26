@@ -1,4 +1,25 @@
-	
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:29:33
+         compiled from "vue\signup.html" */ ?>
+<?php /*%%SmartyHeaderCode:2443454ef1f48db81e1-17219247%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '8031643c85d01305dfa243fd1b3f9130d97141f9' => 
+    array (
+      0 => 'vue\\signup.html',
+      1 => 1424957302,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2443454ef1f48db81e1-17219247',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54ef1f48ddf2e3_47397318',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54ef1f48ddf2e3_47397318')) {function content_54ef1f48ddf2e3_47397318($_smarty_tpl) {?>	
 		<article>
 			<h2>Fiches de pathologies</h2>
 			  L'accessibilité Web dépend de plusieurs composantes interdépendantesW3C 7 :
@@ -24,3 +45,4 @@
 	</section>
 </body>
 </html>
+<?php }} ?>
