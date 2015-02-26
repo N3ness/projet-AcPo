@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 15:36:18
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 16:20:49
          compiled from "vue\aside.html" */ ?>
 <?php /*%%SmartyHeaderCode:403554ef1fbd2c7f93-44269864%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '34ff5f26200b53cb6a533ac5db08ff959062387f' => 
     array (
       0 => 'vue\\aside.html',
-      1 => 1424961178,
+      1 => 1424963885,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<div id="recherche">
 				<label for="inSearch">Recherche : </label>
 				<input class="inSearch" name="search" type="text" />
-				<a href="fiche.html">Recherche avancée</a>
+				<a href="index.php?section=recherche">Recherche avancée</a>
 			</div>
 			
 			<div id="rss">
