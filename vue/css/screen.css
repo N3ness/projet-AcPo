@@ -92,6 +92,9 @@ aside{
 	position: fixed;
 }
 
+aside input{
+	max-width: 95%;
+}
 aside div{
 	margin: 4px;
 	padding: 10px;

@@ -1,5 +1,8 @@
-function afficheMessage(){	alert("Cette page a vraiment besoin d'être corrigée, non?");}
-function afficheBlague(){	alert("<!--[if IE]>\n\t<style type='text/css'>body:{display:none}\n\t</style>\n<![endif]-->");}
-function changeBack(){
-	document.getElementsByTagName('body')[0].style.backgroundColor=document.getElementsByName('couleur')[0].value;;
-}
+function check(input) {     // fonction pour vérifier le mot de passe à l'inscription
+	  if (input.value != document.getElementById('mdp').value) {
+		input.setCustomValidity('Les deux mots de passe ne correspondent pas.');
+	  } else {
+		// le champ est valide : on réinitialise le message d'erreur
+		input.setCustomValidity('');
+	  }
+	}
