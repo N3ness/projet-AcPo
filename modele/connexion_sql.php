@@ -1,14 +1,14 @@
 <?php
-
-try
+function connexion_sql ()
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '');
-}
-catch (Exception $e)
-{
-        die('Erreur : ' . $e->getMessage());
-}
-
-
-
+	try
+	{
+		$bdd = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '');
+	}
+	catch (Exception $e)
+	{
+			die('Erreur : ' . $e->getMessage());
+	}
+	return $bdd;
+}	
 ?>
