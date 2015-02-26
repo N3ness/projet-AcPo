@@ -6,5 +6,5 @@ $smarty = new Smarty();
 
 
 
-$smarty->display("index.html");
+$smarty->display("vue/accueil.html");
 ?>
