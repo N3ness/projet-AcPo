@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 13:02:43
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:08:59
          compiled from "vue\accueil.html" */ ?>
 <?php /*%%SmartyHeaderCode:1702954ef19736b9b30-06815975%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5a89f1ef573fd6e01793c2e26f18874da6a8882d' => 
     array (
       0 => 'vue\\accueil.html',
-      1 => 1424945256,
+      1 => 1424959736,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_54ef1973803ae1_23611432',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54ef1973803ae1_23611432')) {function content_54ef1973803ae1_23611432($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="fr">
@@ -25,8 +25,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Acupuncteurs Associés Accessibles - </title>
-	<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="vue/css/screen.css"  media="screen" />
+	<link rel="stylesheet" type="text/css" href="vue/css/print.css" media="print" />
 	<?php echo '<script'; ?>
  type="text/javascript" src="js/script.js"><?php echo '</script'; ?>
 >
