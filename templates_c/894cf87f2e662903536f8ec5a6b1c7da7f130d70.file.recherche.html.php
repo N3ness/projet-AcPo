@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 16:26:32
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 16:50:26
          compiled from "vue\recherche.html" */ ?>
 <?php /*%%SmartyHeaderCode:2780454ef39d3e689a2-46677355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '894cf87f2e662903536f8ec5a6b1c7da7f130d70' => 
     array (
       0 => 'vue\\recherche.html',
-      1 => 1424964389,
+      1 => 1424965823,
       2 => 'file',
     ),
   ),
@@ -35,14 +35,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</li>
 					<li>
 						<label for="pathologie">Pathologie:</label><br />
-						<input type="checkbox" name="pathologie" value="meridien" />Pathologies de méridien <br />
-						<input type="checkbox" name="pathologie" value="tsang-fu" />Pathologies d’organe/viscère (tsang/fu) <br />
-						<input type="checkbox" name="pathologie" value="jing-jin" />Pathologies des tendino-musculaires (jing jin) <br />
+						<input class="inputleft" type="checkbox" name="pathologie" value="meridien" />Pathologies de méridien <br />
+						<input class="inputleft" type="checkbox" name="pathologie" value="tsang-fu" />Pathologies d’organe/viscère (tsang/fu) <br />
+						<input class="inputleft" type="checkbox" name="pathologie" value="jing-jin" />Pathologies des tendino-musculaires (jing jin) <br />
+						<input class="inputleft" type="checkbox" name="pathologie" value="voies-luo" />Pathologie des branches (voies luo) <br />
+						<input class="inputleft" type="checkbox" name="pathologie" value="merv-vaiss" />Pathologies des merveilleux vaisseaux <br />
 						
 					</li>
 					<li>
-						<label for="meridien">Méridien:</label>
-						<input type="text" id="meridien" name="meridien">
+						<label for="caracteristique">Caractéristique </label><br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="plein" />Plein <br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="chaud" />Chaud <br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="vide" />Vide <br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="froid" />Froid <br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="interne" />Interne<br />
+						<input class="inputleft" type="checkbox" name="caracteristique" value="externe" />Externe<br />
 					</li>
 					<li>
 						<input type="submit" value="Effectuer la recherche" /> 

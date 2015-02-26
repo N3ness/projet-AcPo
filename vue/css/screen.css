@@ -116,6 +116,19 @@ blockquote{
 	color: dimgray;
 }
 
+form ul li{
+	list-style: none;
+	display:inline-block;
+	width: 100%;
+}
+
+.inputleft{
+	float: left;
+	width: 150px;
+	display: inline-block;
+	background: red;
+}
+
 footer{
 	clear:both;
 }
