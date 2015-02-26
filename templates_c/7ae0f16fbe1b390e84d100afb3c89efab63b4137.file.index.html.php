@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 11:01:02
+         compiled from "index.html" */ ?>
+<?php /*%%SmartyHeaderCode:2260454eeeede06b172-86037283%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '7ae0f16fbe1b390e84d100afb3c89efab63b4137' => 
+    array (
+      0 => 'index.html',
+      1 => 1424944704,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2260454eeeede06b172-86037283',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54eeeede0a1c86_64603597',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_54eeeede0a1c86_64603597')) {function content_54eeeede0a1c86_64603597($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
@@ -6,7 +27,9 @@
 	<title>Acupuncteurs Associés Accessibles - </title>
 	<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-	<script type="text/javascript" src="js/script.js"></script>
+	<?php echo '<script'; ?>
+ type="text/javascript" src="js/script.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 	<header>
@@ -45,3 +68,4 @@
 	</section>
 </body>
 </html>
+<?php }} ?>
