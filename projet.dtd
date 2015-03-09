@@ -1,0 +1,11 @@
+<!-- 
+
+Modele DTD pour le projet Acupuncture du module TLI
+
+-->
+
+<!ELEMENT pathologie ( description | categorie | meridien | symptome*)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT categorie (#PCDATA)>
+<!ELEMENT meridien (#PCDATA)>
+<!ELEMENT symptome (#PCDATA)>
