@@ -1,0 +1,19 @@
+<?php
+	class Patho extends Model{
+		private $symptomes ="";
+		
+		private $meridien ="";
+		private $type ="";
+		private $description ="";
+		public function _construct($diP,$mer,$type,$desc){
+			parent::__construct('Pathologies');
+			$this->diP =$diP;	
+		}
+		public function pathos(){
+			$reponse = $bdd->query('SELECT * FROM');
+		}
+
+		
+	}
+?>
+

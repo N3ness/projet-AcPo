@@ -6,7 +6,7 @@
 		private $type ="";
 		private $desc ="";
 		public function _construct($diP,$mer,$type,$desc){
-			$this->diP =$diP;		
+			$this->diP =$diP;	
 		}
 	}
 ?>
