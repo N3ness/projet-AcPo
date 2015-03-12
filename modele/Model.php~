@@ -1,0 +1,24 @@
+<?php
+
+	abstract class Model{
+	    private $table;
+
+	    // identifiant de connexion
+	    protected $mysql;
+
+	    public function __construct($table)
+	    {
+		$this->table = $table;
+		try
+		{
+			$this->mysql = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', 'tp');
+		}
+		catch (Exception $e)
+		{
+				die('Erreur : ' . $e->getMessage());
+		}
+	    }
+	}
+
+	
+?>
