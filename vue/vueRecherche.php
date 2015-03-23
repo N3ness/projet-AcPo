@@ -24,7 +24,7 @@
 		<aside>
 			<div id="recherche">
 				<label for="inSearch">Recherche : </label>
-				<input class="inSearch" name="search" type="text" />
+				<input id="inSearch" name="search" type="text" />
 				<a href="index.php?section=recherche">Recherche avancée</a>
 			</div>
 			

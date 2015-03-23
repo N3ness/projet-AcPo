@@ -1,0 +1,6 @@
+- Extraire le php des vues
+- Faire la recherche (avancée et normale)
+- Finir le modele
+- Enregistrer un utilisateur
+- Enregistrer le tableau de Patho en var de session
+- Et encore d'autres trucs a rajouter!
