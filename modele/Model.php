@@ -11,7 +11,7 @@
 			$this->table = $table;
 			try
 			{
-				$this->bdd = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', 'tp');
+				$this->bdd = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '');
 			}
 			catch (Exception $e)
 			{
@@ -24,22 +24,32 @@
 	    }
 	    
 	    public function getPathos(){
-			$requete = $this->bdd->query('SELECT * FROM patho');
-			
-			for ($i = 0 ; $donnees = $requete->fetch() ; $i++){
-				$patho = new Patho($donnees['idP'],$donnees['mer'],$donnees['type'],$donnees['desc']);
-				$pathos[$i] = $patho;
+			try {
+				$requete = $this->bdd
+				->query('	SELECT p.type as Type, 
+						p.desc as Description,
+						m.nom as Meridien,
+						m.element as Element,
+						s.desc as Symptome,
+						k.name as tags 
+						FROM patho p
+						JOIN meridien m ON p.mer = m.code
+						JOIN symptPatho sp ON p.idP = sp.idP
+						JOIN symptome s ON s.idS = sp.idS
+						JOIN keySympt ks ON ks.idS = s.idS
+						JOIN keywords k ON k.idK = ks.idK;');
+
+			} catch(PDOException $ex) {
+				echo "An Error occured!"; //user friendly message
 			}
-			return $pathos;
-			
-			/*while($donnees = $requete->fetch())
-			{
-				$patho = new Patho($donnees['idP'],$donnees['mer'],$donnees['type'],$donnees['desc']);
-				$pathos[i
+			$donnees = $requete->fetchAll(PDO::FETCH_ASSOC);
+			$pathos = "";
+			//echo $requete->columnCount();
+			/*for ($i = 0 ; $donnees[$i] ; $i++){
+				$patho = new Patho($donnees[$i]['Type'],$donnees[$i]['Description'],$donnees[$i]['Meridien'],$donnees[$i]['Element'],$donnees[$i]['Symptome'],$donnees[$i]['tags']);
+				$pathos[$i] = $patho;
 			}*/
+			return $donnees;
 	    }
-
-	}
-
-	
+	}	
 ?>

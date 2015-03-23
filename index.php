@@ -1,8 +1,4 @@
 <?php
-require("tpl/Smarty.class.php"); // On inclut la classe Smarty
-
-$smarty = new Smarty();
-//include_once('modele/connexion_sql.php');
 
 if (!isset($_GET['section']) OR $_GET['section'] == 'accueil')
 {
@@ -20,4 +16,3 @@ else if ($_GET['section'] == 'recherche')
 {
     include_once('controleur/recherche.php');
 }
-?>

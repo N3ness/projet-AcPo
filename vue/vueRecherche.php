@@ -1,25 +1,38 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 16:50:26
-         compiled from "vue\recherche.html" */ ?>
-<?php /*%%SmartyHeaderCode:2780454ef39d3e689a2-46677355%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    '894cf87f2e662903536f8ec5a6b1c7da7f130d70' => 
-    array (
-      0 => 'vue\\recherche.html',
-      1 => 1424965823,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '2780454ef39d3e689a2-46677355',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ef39d3ea3336_93299702',
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ef39d3ea3336_93299702')) {function content_54ef39d3ea3336_93299702($_smarty_tpl) {?>		<article>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acupuncteurs Associés Accessibles - </title>
+	<link href="vue/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="vue/css/print.css" rel="stylesheet" type="text/css" media="print" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<header>
+	<h1>Bienvenue sur le site des Acupuncteurs Associés Accessibles</h1>
+		<blockquote>"Si ca pique, c'est que ca fonctionne"</blockquote>
+</header>
+<nav>
+	<ul>
+		<li><a href="index.php">Accueil</a></li>
+		<li><a href="index.php?section=fiche">Fiches</a></li>
+		<li><a href="index.php?section=signup">Créer un compte</a></li>
+	</ul>
+</nav>
+	<section>
+		<aside>
+			<div id="recherche">
+				<label for="inSearch">Recherche : </label>
+				<input class="inSearch" name="search" type="text" />
+				<a href="index.php?section=recherche">Recherche avancée</a>
+			</div>
+			
+			<div id="rss">
+				Flux RSS:
+			</div>
+		</aside>
+		<article>
 			<h2>Recherche avancée</h2>
 			<p>Veuillez préciser les termes de votre recherche</p>
 			
@@ -58,9 +71,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</form>
 		</article>
 		<footer>
-		
 		</footer>
 	</section>
-</body>
+	</body>
 </html>
-<?php }} ?>
