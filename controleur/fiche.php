@@ -1,10 +1,19 @@
 <?php
-include_once('modele/Model.php');
 
-$model = new Model('Pathologies');
+class fiche
+{
+	public function execute()
+	{
+		include_once('modele/Model.php');
 
-$pathos = $model->getPathos();
+		$model = new Model('Pathologies');
 
-require "vue/vueFiche.php";
-?>
+		$pathos = $model->getPathos();
 
+		
+		$template = new RainTPL();
+		$template->assign('pathos',$pathos);
+		$template->draw('vueFiche');
+		//require "vue/vueFiche.php";
+	}
+}

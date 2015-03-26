@@ -1,0 +1,31 @@
+{include="header"}
+{include="nav"}
+	<section>
+		<aside>
+			<div id="recherche">
+				<label for="inSearch">Recherche : </label>
+				<input id="inSearch" name="search" type="text" />
+				<a href="index.php?section=recherche">Recherche avancée</a>
+			</div>
+			
+			<div id="rss">
+				Flux RSS:
+			</div>
+		</aside>
+		
+		<article>
+			<h2>Fiches de pathologies</h2>
+			<ul>
+				{loop="pathos"}
+					<li>{$value.Symptome} - {$value.Meridien}</li>
+				{/loop}
+			
+				<?php
+				
+				//foreach($pathos as $patho):
+				//	echo "<li>".$patho['Symptome']." - ".$patho['Meridien']."</li>";
+				//endforeach;
+				?>
+			</ul>
+		</article>
+{include="footer"}

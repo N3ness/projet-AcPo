@@ -1,0 +1,18 @@
+[26-Mar-2015 16:12:11 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:12:11 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:12:11 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0
+[26-Mar-2015 16:12:11 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:12:11 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:12:11 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0
+[26-Mar-2015 16:13:33 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:13:33 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:13:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0
+[26-Mar-2015 16:13:33 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:13:33 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:13:33 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0
+[26-Mar-2015 16:13:35 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:13:35 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:13:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0
+[26-Mar-2015 16:13:35 Europe/Paris] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in C:\wamp\www\projet-AcPo\index.php on line 10
+[26-Mar-2015 16:13:35 Europe/Paris] PHP Stack trace:
+[26-Mar-2015 16:13:35 Europe/Paris] PHP   1. {main}() C:\wamp\www\projet-AcPo\index.php:0

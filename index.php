@@ -1,12 +1,22 @@
 <?php
 
+include "lib/rain.tpl.class.php"; //include Rain TPL
+raintpl::$tpl_dir = "vue/"; // template directory
+raintpl::$cache_dir = "cache/"; // cache directory
+raintpl::configure("base_url",".");
+
+
 if (!isset($_GET['section']) OR $_GET['section'] == 'accueil')
 {
-    include_once('controleur/accueil.php');
+	require 'controleur/accueil.php';
+	$vue = new accueil();
+	$vue->execute();
 }
 else if ($_GET['section'] == 'fiche')
 {
-    include_once('controleur/fiche.php');
+	require 'controleur/fiche.php';
+	$vue = new fiche();
+	$vue->execute();
 }
 else if ($_GET['section'] == 'signup')
 {
