@@ -5,8 +5,10 @@
 				$requete = $this->bdd
 				->query('SELECT Login FROM users WHERE Login = $login AND Password = $mdp;');
 
-			} catch(PDOException $ex) {
-				echo "An Error occured!"; //user friendly message
+			} 
+			catch(PDOException $ex) {
+				echo "Il y a une erreur"; 
+				echo $ex;
 			}
 			if (isset($requete))
 			{
