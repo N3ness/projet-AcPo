@@ -1,5 +1,6 @@
 <?php
 	include_once('modele/Patho.php');
+	include_once('lib/PDO1.php');
 	class Model{
 	    private $table;
 
@@ -9,14 +10,9 @@
 	    public function __construct($table)
 	    {
 			$this->table = $table;
-			try
-			{
-				$this->bdd = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '');
-			}
-			catch (Exception $e)
-			{
-				die('Erreur : ' . $e->getMessage());
-			}
+			
+				$this->bdd = PDO1::getInstance();
+			
 	    }
 	    
 	    public function getBdd(){
