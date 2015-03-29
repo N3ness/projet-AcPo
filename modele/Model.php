@@ -10,9 +10,7 @@
 	    public function __construct($table)
 	    {
 			$this->table = $table;
-			
-				$this->bdd = PDO1::getInstance();
-			
+			$this->bdd = PDO1::getInstance();
 	    }
 	    
 	    public function getBdd(){
@@ -40,12 +38,20 @@
 			}
 			$donnees = $requete->fetchAll(PDO::FETCH_ASSOC);
 			$pathos = "";
-			//echo $requete->columnCount();
-			/*for ($i = 0 ; $donnees[$i] ; $i++){
-				$patho = new Patho($donnees[$i]['Type'],$donnees[$i]['Description'],$donnees[$i]['Meridien'],$donnees[$i]['Element'],$donnees[$i]['Symptome'],$donnees[$i]['tags']);
-				$pathos[$i] = $patho;
-			}*/
 			return $donnees;
 	    }
+		
+		public function getListPatho(){
+			try {
+				$requete = $this->bdd
+				->query('SELECT p.desc,p.type FROM patho p;');
+
+			} catch(PDOException $ex) {
+				echo "An Error occured!"; //user friendly message
+			}
+			$listPathos = $requete->fetchAll(PDO::FETCH_ASSOC);
+			return $listPathos;
+	    }
+ 
 	}	
 ?>

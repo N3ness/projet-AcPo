@@ -1,18 +1,15 @@
 {include="header"}
 {include="nav"}
 <section> <!-- Balise fermée dans le footer -->
-	<aside>
-		<div id="recherche">
-			<label for="inSearch">Recherche : </label>
-			<input id="inSearch" name="search" type="text" />
-			<a href="/index.php?section=recherche">Recherche avancée</a>
-		</div>
-		<div id="rss">
-			Flux RSS:
-		</div>
-	</aside>
 	<article>
-		<h2>Projet TLI</h2>
+		<p>{$message}</p>
+		<p>{if="($authenticated=='false')"}
+			{include="connexion"}
+		{else}
+			{include="connected"}
+		{/if}
+		</p>
+		<h2>Flux RSS</h2>
 		<p>Ceci est un site fictif. Il est l'objet d'un projet académique de développement d'applications WEB</p>
 	</article>
 {include="footer"}

@@ -1,32 +1,53 @@
-/* Textures from www.webtexture.net */
-
 body{
-	margin: 0;
+	margin: 0px;
 	width: 100%;
-	background-image: url(../img/texture.jpg);
-	background-repeat: repeat;
+	font-family: Verdana, Arial, sans-serif;
 }
 header{
-	background-image: url(../img/background.jpg);
-	margin: 0;
+	margin: 0px;
 	width: 100%;
-	padding: 10px;
+}
+/******************************************************/
+/********** Navbar ************************************/
+/******************************************************/
+nav{
+	background: darkgrey;
+	text-align: center;
+	width : 100%;
+}
+nav ul{
+	border: none;
+	padding: 0;
 }
 
+nav ul li{
+	display: inline-block;
+	width: 20%;
+	margin: none;
+}
+nav ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: darkslategrey;
+	width: 100%;
+	height:100%;
+	line-height: 2em;
+	vertical-align: middle;
+}
+
+nav ul li a:hover{
+	background: white;
+}
+
+/******************************************************/
+/********** Contenu ************************************/
+/******************************************************/
 section{
 	display: block;
-	margin: 0 auto 0 auto;
-	width: 840px;
+	margin: 0px auto 0px auto;
+	width: 80%;
 	background: white;
-	padding: 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	box-shadow: 5px 5px 5px -5px #cfcfcf;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
+	padding: 1%;
 }
 
 h1{
@@ -34,81 +55,20 @@ h1{
 	color: darkslategrey;
 	font-family: Verdana, Arial, sans-serif;
 }
-nav ul{
+h2{
 	text-align: center;
 }
 
-nav ul li{
-	display: inline-block;
-}
-nav ul li a{
-	display: block;
-	text-decoration: none;
-	color: darkslategrey;
-	font-family: Verdana, Arial, sans-serif;
-	width: 180px;
-	line-height: 30px;
-	background-image : url(../img/background.jpg);
-	text-align: center;
-	vertical-align: middle;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	box-shadow: 5px 5px 5px -5px #cfcfcf;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
-}
-
-nav ul li a:hover{
-	background-image : url(../img/back2.jpg);
-	color: white;
-}
 
 article{
 	float: right;
-	width: 600px;
+	width: 96%;
 	position: relative;
 	display:inline-block;
-	padding: 10px;
-	margin: 4px;
+	padding: 1%;
+	margin: 1%;
 	color: darkslategrey;
-	font-family: Verdana, Arial, sans-serif;
 	background-color: whitesmoke;
-		-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	box-shadow: 5px 5px 5px -5px #cfcfcf;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
-}
-
-aside{
-	display: inline-block;
-	width: 170px;
-	position: fixed;
-}
-
-aside input{
-	max-width: 95%;
-}
-aside div{
-	margin: 4px;
-	padding: 10px;
-	background-image : url(../img/background.jpg);
-	color: darkslategrey;
-	font-family: Verdana, Arial, sans-serif;
-	-moz-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-webkit-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	-o-box-shadow: 5px 5px 5px -5px #cfcfcf;
-	box-shadow: 5px 5px 5px -5px #cfcfcf;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=5);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 
 blockquote{
@@ -118,111 +78,41 @@ blockquote{
 	text-align: center;
 	color: dimgray;
 }
-
+/******************************************************/
+/********** Formulaire Recherche **********************/
+/******************************************************/
 form ul li{
 	list-style: none;
 	display:inline-block;
 	width: 100%;
+	height: 1.5em;
 }
-
-.inputleft{
-	float: left;
-	width: 150px;
-	display: inline-block;
-	background: red;
+form ul li label{
+	position: absolute;
+	left: 20%;
 }
-
+form ul li input{
+	position: absolute;
+	right: 20%;
+}
+input.validerButton{
+	margin: auto;
+}
+/******************************************************/
+/********** Footer ************************************/
+/******************************************************/
 footer{
 	clear:both;
 }
+/******************************************************/
+/********** Phone et tablettes ************************/
+/******************************************************/
 
-/* Partie Phone/Tablets */
-@media (max-width: 640px) {
-    * {
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-    
-    /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
-
-    body {
-        width: auto;
-        margin: 0;
-        padding: 0;
-    }
-    
-    /* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
-
-    img,
-    table,
-    td,
-    blockquote,
-    code,
-    pre,
-    textarea,
-    input,
-    iframe,
-    object,
-    embed,
-    video {
-        max-width: 100%;
-    }
-    
-    /* conserver le ratio des images */
-
-    img {
-        height: auto;
-    }
-    
-    /* gestion des mots longs */
-
-    textarea,
-    table,
-    td,
-    th,
-    code,
-    pre,
-    samp {
-        -webkit-hyphens: auto; /* césure propre */
-        -moz-hyphens: auto;
-        hyphens: auto;
-        word-wrap: break-word; /* passage à la ligne forcé */
-    }
-    
-    code,
-    pre,
-    samp {
-        white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
-    }
-    
-    /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
-
-    element1,
-    element2 {
-        float: none;
-        width: auto;
-    }
-    
-    /* masquer les éléments superflus */
-
-    .hide_mobile {
-        display: none !important;
-    }
-    
-    /* Un message personnalisé */
-
-    body:before {
-        content: "Version mobile du site";
-        display: block;
-        text-align: center;
-        font-style: italic;
-        color: #777;
-    }
+@media screen and (max-width: 640px) {
+nav ul li{
+	display: inline;
+	width: 20%;
+	height : 100%;
+	margin: none;
 }
-@media (max-device-width:768px) and (orientation: landscape) {
-  html {
-   -webkit-text-size-adjust: 100%;
-   -ms-text-size-adjust: 100%;
-  }
 }

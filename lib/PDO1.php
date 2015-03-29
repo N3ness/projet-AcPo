@@ -19,7 +19,7 @@ class PDO1 extends PDO {
 			
 			try {
 			
-				self::$_instance = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '');
+				self::$_instance = new PDO('mysql:host=localhost;dbname=acubd;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 			
 			} catch (PDOException $e) {
 			

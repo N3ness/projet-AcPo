@@ -1,13 +1,12 @@
 <?php
 
-class accueil
+class Accueil
 {
-	public function execute()
+	public function execute($msg)
 	{
 		$template = new RainTPL();
-		
-		$template->assign('titrePage',"Acupuncteurs Associés Accessibles - ");
-		
+		$template->assign("authenticated",$_SESSION['authenticated']);
+		$template->assign("message",$msg);
 		$html=$template->draw('vueAccueil', $return_string=true);
 		echo $html;
 	}
