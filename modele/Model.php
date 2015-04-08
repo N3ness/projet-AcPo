@@ -55,12 +55,14 @@
 	    }
 		
 		//Pathologies par mot cle
-		 public function getPathosMC($arg){
+		 public function getPathosMC($meridien,$carac,$typePatho,$motCle){
 			 $donnees = '';
+			 $firstArg = true;
 			try {
 				$bdd = $this->bdd;
 				$query= '	SELECT p.type as Type, 
 						p.desc as Description,
+						p.type as Type,
 						m.nom as Meridien,
 						m.element as Element,
 						s.desc as Symptome,
@@ -70,22 +72,90 @@
 						JOIN symptPatho sp ON p.idP = sp.idP
 						JOIN symptome s ON s.idS = sp.idS
 						JOIN keySympt ks ON ks.idS = s.idS
-						JOIN keywords k ON k.idK = ks.idK
-						WHERE k.name=?
-						ORDER BY Symptome;';
-				$prep = $bdd->prepare($query);
-				$prep->bindValue(1, $arg, PDO::PARAM_STR);
-				$prep->execute();
-				$donnees = $prep->fetchAll();
-				$prep->closeCursor();
-				$prep = NULL;
+						JOIN keywords k ON k.idK = ks.idK';
+				if($meridien != ''){
+					$firstArg = false;
+					$query = $query." WHERE m.nom='".$meridien."'";
+				}
+				if($carac != ''){
+					$carac = '%'.$carac;
+					if($firstArg){
+						$query = $query." WHERE p.desc LIKE '".$carac."'";
+						$firstArg = false;
+					}
+					else
+						$query = $query." AND p.desc LIKE '".$carac."'";				
+				}
+				if($motCle != ''){
+					if($firstArg){
+						$query = $query." WHERE k.name LIKE '%".$motCle."%'";
+						$firstArg = false;
+					}
+					else
+						$query = $query." AND k.name LIKE '%".$motCle."%'";	
+				}
+				if($typePatho != ''){
+					if($firstArg){
+						$query = $query.' WHERE';
+						$firstArg = false;
+					}
+					else{
+						$query = $query.' AND';
+					}
+					
+					switch($typePatho){
+						case 'zang fu':
+							$query = $query." p.type LIKE 't%'";
+							break;
+						case 'meridien':
+							$query = $query." (p.type ='mi' OR p.type='me')";
+							break;
+						case 'voie luo':
+							$query = $query." p.type LIKE 'l%'";
+							break;
+						case 'merveilleux vaisseaux':
+							$query = $query." (p.type LIKE 'mv%' OR p.type='mv')";
+							break;
+						case 'jing jin':
+							$query = $query." p.type='j'";
+							break;
+					}
+					//ajout du pt virgule de fin
+					$query = $query.";";
+						
+				}
+				//echo $query;
+				$requete = $bdd->query($query);
+				$donnees = $requete->fetchAll();
+
 
 			} catch(PDOException $ex) {
-				echo "An Error occured!"; //user friendly message
+				echo "An Error occured!".$ex->getMessage(); //user friendly message
+				echo $query;
 			}
 			$pathos = "";
 			return $donnees;
 	    }
+		//Meridiens
+		 public function getMeridiens(){
+			 $donnees = '';
+			try {
+				$bdd = $this->bdd;
+				$query= 'SELECT nom FROM meridien ORDER BY nom asc;';
+				$prep = $bdd->prepare($query);
+				$prep->execute();
+				$donnees = $prep->fetchAll(PDO::FETCH_ASSOC);
+				$prep->closeCursor();
+				$prep = NULL;
+
+			} catch(PDOException $ex) {
+				echo 'An Error occured!'.$ex->getMessage(); //user friendly message
+			}
+			$pathos = "";
+			return $donnees;
+	    }
+
+
  
 	}	
 ?>

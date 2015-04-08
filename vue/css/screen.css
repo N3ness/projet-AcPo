@@ -97,7 +97,7 @@ form ul li label{
 	position: absolute;
 	left: 20%;
 }
-form ul li input{
+form ul li input,select{
 	position: absolute;
 	right: 20%;
 }

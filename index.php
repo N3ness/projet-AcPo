@@ -71,7 +71,19 @@ else if ($_GET['section'] == 'signup'){
 else if ($_GET['section'] == 'recherche'){
 	require 'controleur/Recherche.php';
 	$vue = new Recherche();
-	$vue->execute($_POST['keyword']);
+	$meridien ='';
+	$carac ='';
+	$typePatho ='';
+	$motCle ='';
+	if(isset($_POST['meridien']))
+		$meridien = $_POST['meridien'];
+	if(isset($_POST['keyword']))
+		$motCle = $_POST['keyword'];
+	if(isset($_POST['carac']))
+		$carac = $_POST['carac'];
+	if(isset($_POST['typePatho']))
+		$typePatho = $_POST['typePatho'];
+	$vue->execute($meridien,$carac,$typePatho,$motCle);
 }
 else{
 	include_once("vue/vue404.html");

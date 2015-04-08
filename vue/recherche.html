@@ -2,8 +2,40 @@
 	<form method="post" action="index.php?section=recherche">
 		<ul>
 			<li>
+				<label for="meridien">Méridien :</label>
+					<select name="meridien" id="meridien">
+						<option value=""></option>
+						{loop="listMeridiens"}
+							<option value="{$value.nom}">{$value.nom}</option>
+						{/loop}
+					</select>
+			</li>
+			<li>
+				<label for="carac">Caractéristiques :</label>
+					<select name="carac" id="carac">
+						<option value=""></option>
+						<option value="plein">Plein</option>
+						<option value="chaud">Chaud</option>
+						<option value="vide">Vide</option>
+						<option value="froid">Froid</option>
+						<option value="interne">Interne</option>
+						<option value="externe">Externe</option>
+					</select>
+			</li>
+			<li>
+				<label for="typePatho">Type de pathologie :</label>
+					<select name="typePatho" id="typePatho">
+						<option value=""></option>
+						<option value="meridien">Meridien</option>
+						<option value="zang fu">Organe/Viscere</option>
+						<option value="voie luo">Voie Luo</option>
+						<option value="merveilleux vaisseaux">Merveilleux vaisseau</option>
+						<option value="jing jin">Jing Jin</option>
+					</select>
+			</li>
+			<li>
 				<label for="keyword">Mot-clé:</label>
-				<input type="text" id="keyword" name="keyword" required>
+					<input type="text" id="keyword" name="keyword">
 			</li>
 			<li>
 				<input type="submit" value="Effectuer la recherche" /> 
