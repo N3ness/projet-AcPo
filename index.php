@@ -37,7 +37,7 @@ if (isset($_GET['disconnect']) AND $_GET['disconnect'] == 'true'){
 }
 //initialisation var session
 if (!isset($_SESSION['authenticated'])){
-	echo 'var session auth mise a false car inexistante';
+//	echo 'var session auth mise a false car inexistante';
 	$_SESSION['authenticated'] = 'false';
 }
 //Routage des pages
