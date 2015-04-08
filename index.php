@@ -6,11 +6,11 @@ raintpl::$cache_dir = "cache/"; // cache directory
 raintpl::configure("base_url",".");
 
 ////////DEBUG
-//		echo '<p>';
-//			echo 'Session :';print_r($_SESSION);echo '<br/>';
-//			echo 'Post :';print_r($_POST);echo '<br/>';
-//			echo 'Get :';print_r($_GET);echo '<br/>';
-//			echo '<br/></p>';
+		// echo '<p>';
+			// echo 'Session :';print_r($_SESSION);echo '<br/>';
+			// echo 'Post :';print_r($_POST);echo '<br/>';
+			// echo 'Get :';print_r($_GET);echo '<br/>';
+			// echo '<br/></p>';
 ////////
 //Declaration var
 	$msg = '';
@@ -71,7 +71,7 @@ else if ($_GET['section'] == 'signup'){
 else if ($_GET['section'] == 'recherche'){
 	require 'controleur/Recherche.php';
 	$vue = new Recherche();
-	$vue->execute();
+	$vue->execute($_POST['keyword']);
 }
 else{
 	include_once("vue/vue404.html");

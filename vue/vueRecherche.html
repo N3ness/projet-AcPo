@@ -2,40 +2,30 @@
 {include="nav"}
 	<section>
 		<article>
-			<h2>Recherche avancée</h2>
-			<p>Veuillez préciser les termes de votre recherche</p>
-			
-			<form method="post" action="recherche.php">
-				<ul>
-					<li>
-						<label for="keyword">Mot-clé:</label>
-						<input type="text" id="keyword" name="keyword" required>
-					</li>
-					<li>
-						<label for="symptome">Symptôme:</label>
-						<input type="text" id="symptome" name="symptome" >
-					</li>
-					<li>
-						<label for="pathologie">Pathologie:</label><br />
-						<ul>
-							{loop="listPathos"}
-							<li><input type="checkbox" name="pathologie" value="{$value.type}" />{$value.desc}</li>
-							{/loop}
-						</ul>
-					</li>
-					<li>
-						<label for="caracteristique">Caractéristique </label><br />
-						<input class="inputleft" type="checkbox" name="caracteristique" value="plein" />Plein
-						<input class="inputleft" type="checkbox" name="caracteristique" value="chaud" />Chaud 
-						<input class="inputleft" type="checkbox" name="caracteristique" value="vide" />Vide
-						<input class="inputleft" type="checkbox" name="caracteristique" value="froid" />Froid
-						<input class="inputleft" type="checkbox" name="caracteristique" value="interne" />Interne
-						<input class="inputleft" type="checkbox" name="caracteristique" value="externe" />Externe
-					</li>
-					<li>
-						<input type="submit" value="Effectuer la recherche" /> 
-					</li>
-				</ul>
-			</form>
+			<p>{if="($authenticated=='false')"}
+				{include="rechercheImpossible"}
+			{else}
+				{include="recherche"}
+			{/if}
+			</p>
+			<h2>Résultat de la recherche</h2>
+			<table>
+				<tr>
+					<th>Symptome</th>
+					<th>Meridien</th>
+					<th>Description</th>
+					<th>Element</th>
+					<th>tags</th>
+				</tr>
+				{loop="listPathos"}
+					<tr>
+					<td>{$value.Symptome}</td>
+					<td>{$value.Meridien}</td>
+					<td>{$value.Description}</td>
+					<td>{$value.Element}</td>
+					<td>{$value.tags}</td>
+					</tr>
+				{/loop}
+			</ul>
 		</article>
 {include="footer"}

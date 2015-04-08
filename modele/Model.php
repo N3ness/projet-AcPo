@@ -53,6 +53,39 @@
 			$listPathos = $requete->fetchAll(PDO::FETCH_ASSOC);
 			return $listPathos;
 	    }
+		
+		//Pathologies par mot cle
+		 public function getPathosMC($arg){
+			 $donnees = '';
+			try {
+				$bdd = $this->bdd;
+				$query= '	SELECT p.type as Type, 
+						p.desc as Description,
+						m.nom as Meridien,
+						m.element as Element,
+						s.desc as Symptome,
+						k.name as tags 
+						FROM patho p
+						JOIN meridien m ON p.mer = m.code
+						JOIN symptPatho sp ON p.idP = sp.idP
+						JOIN symptome s ON s.idS = sp.idS
+						JOIN keySympt ks ON ks.idS = s.idS
+						JOIN keywords k ON k.idK = ks.idK
+						WHERE k.name=?
+						ORDER BY Symptome;';
+				$prep = $bdd->prepare($query);
+				$prep->bindValue(1, $arg, PDO::PARAM_STR);
+				$prep->execute();
+				$donnees = $prep->fetchAll();
+				$prep->closeCursor();
+				$prep = NULL;
+
+			} catch(PDOException $ex) {
+				echo "An Error occured!"; //user friendly message
+			}
+			$pathos = "";
+			return $donnees;
+	    }
  
 	}	
 ?>
