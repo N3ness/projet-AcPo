@@ -31,7 +31,8 @@
 						JOIN symptPatho sp ON p.idP = sp.idP
 						JOIN symptome s ON s.idS = sp.idS
 						JOIN keySympt ks ON ks.idS = s.idS
-						JOIN keywords k ON k.idK = ks.idK;');
+						JOIN keywords k ON k.idK = ks.idK
+						ORDER BY Symptome;');
 
 			} catch(PDOException $ex) {
 				echo "An Error occured!"; //user friendly message

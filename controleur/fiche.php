@@ -10,6 +10,7 @@ class Fiche
 
 		$template = new RainTPL();
 		$template->assign('pathos',$pathos);
+		$template->assign("authenticated",$_SESSION['authenticated']);
 		$html=$template->draw('vueFiche', $return_string=true);
 		echo $html;
 	}

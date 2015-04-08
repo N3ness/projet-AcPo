@@ -2,10 +2,29 @@
 {include="nav"}
 	<section>
 		<article>
+			<p>{if="($authenticated=='false')"}
+			{include="rechercheImpossible"}
+			{else}
+				{include="recherche"}
+			{/if}
+			</p>
 			<h2>Fiches de pathologies</h2>
-			<ul>
+			<table>
+				<tr>
+					<th>Symptome</th>
+					<th>Meridien</th>
+					<th>Description</th>
+					<th>Element</th>
+					<th>tags</th>
+				</tr>
 				{loop="pathos"}
-					<li>{$value.Symptome} - {$value.Meridien}</li>
+					<tr>
+					<td>{$value.Symptome}</td>
+					<td>{$value.Meridien}</td>
+					<td>{$value.Description}</td>
+					<td>{$value.Element}</td>
+					<td>{$value.tags}</td>
+					</tr>
 				{/loop}
 			</ul>
 		</article>
