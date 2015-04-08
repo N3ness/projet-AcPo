@@ -14,6 +14,8 @@ raintpl::configure("base_url",".");
 ////////
 //Declaration var
 	$msg = '';
+	
+/////////////////////////Actions USER///////////////
 //Authentif
 if (isset($_POST['user']) AND isset($_POST['pass'])){
 //		echo 'Passage dans l\'authentication du front'; //DEBUG
@@ -35,16 +37,26 @@ if (isset($_GET['disconnect']) AND $_GET['disconnect'] == 'true'){
 	$connexion = new User();
 	$msg = $connexion->deconnexion();
 }
+
+
+////////////////////////////Actions Session///////////////////
 //initialisation var session
 if (!isset($_SESSION['authenticated'])){
 //	echo 'var session auth mise a false car inexistante';
 	$_SESSION['authenticated'] = 'false';
 }
-//Routage des pages
+
+
+/////////////////////////////Routage des pages
 if (!isset($_GET['section']) OR $_GET['section'] == 'accueil'){
 	require 'controleur/Accueil.php';
 	$vue = new Accueil();
 	$vue->execute($msg);
+}
+else if ($_GET['section'] == 'biblio'){
+	require 'controleur/Biblio.php';
+	$vue = new Biblio();
+	$vue->execute();
 }
 else if ($_GET['section'] == 'fiche'){
 	require 'controleur/Fiche.php';
