@@ -1,4 +1,4 @@
-<h2>Connexion</h2>
+<?php if(!class_exists('raintpl')){exit;}?><h2>Connexion</h2>
 		<form method="post" action="index.php">
 			<ul>
 				<li>
@@ -13,5 +13,4 @@
 					<input type="submit" value="Connexion" /> 
 				</li>
 			</ul>
-			<a href="index.php?section=signup">Créer un compte</a>
 		</form>

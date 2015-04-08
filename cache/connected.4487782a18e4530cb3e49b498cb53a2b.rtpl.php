@@ -1,0 +1,1 @@
+<?php if(!class_exists('raintpl')){exit;}?><p><a href="./index.php?disconnect=true">Déconnexion</a></p>
