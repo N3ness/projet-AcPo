@@ -3,6 +3,7 @@
 //- Finir le modele - DONE
 //- Enregistrer un utilisateur - DONE
 //- Enregistrer le tableau de Patho en var de session - DONE (de manière différente)
-- XML
+//- XML DONE (a	revoir vite fait si on a le temps
 - RSS
+- Url Rewriting pour faire joli
 - API REST

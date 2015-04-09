@@ -61,7 +61,7 @@ else if ($_GET['section'] == 'biblio'){
 else if ($_GET['section'] == 'fiche'){
 	require 'controleur/Fiche.php';
 	$vue = new Fiche();
-	$vue->execute();
+	$vue->execute($_GET['id']);
 }
 else if ($_GET['section'] == 'signup'){
 	require 'controleur/Signup.php';
