@@ -25,7 +25,7 @@ class Fiche
 		$dom = new DomDocument();
 		$dom->loadXML($chaineXML);
 		$dom->save('patho'.$id.'.xml');
-		header('Location: patho'.$id.'.xml');
+		header('Location: ../patho'.$id.'.xml');
 		exit();
 		
 /* 		$template = new RainTPL();
