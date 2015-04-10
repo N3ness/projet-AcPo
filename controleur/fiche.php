@@ -11,8 +11,9 @@ class Fiche
 		//var_dump($table);
 		
 		$chaineXML = '<?xml version="1.0" encoding="UTF-8" ?>';
+		$chaineXML .= '<!DOCTYPE document SYSTEM "projet.dtd">';
 		$chaineXML .= '<?xml-stylesheet type="text/xsl" href="patho.xsl" ?>';
-		$chaineXML .= '<pathologie xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="schema_pathos.xsd">';
+		$chaineXML .= '<pathologie>';
 		$chaineXML .= '<description>'.$table[0]['Description'].'</description>';
 		$chaineXML .= '<meridien>'.$table[0]['Meridien'].'</meridien>';
 		$chaineXML .= '<symptomes>';
