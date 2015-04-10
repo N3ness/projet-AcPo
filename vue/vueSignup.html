@@ -5,11 +5,6 @@
 			<h2>Création d'un nouveau compte</h2>
 			<form method="post" action="index.php">
 				<ul>
-				<!--	<li>
-						<label for="full_name">Nom complet :</label>
-						<input type="text" id="full_name" name="full_name" required>
-					</li>
-				-->
 					<li>
 						<label for="username">Nom d'utilisateur :</label>
 						<input type="text" id="username" name="newUser" value=" " required oninput="check(this)" >
@@ -18,12 +13,6 @@
 						<label for="mdp">Mot de passe :</label>
 						<input type="password" id="mdp" name="newPass" value="" required oninput="check(this)" />					
 					</li>
-				<!--	
-					<li>
-						<label for="mdp_repeat">Confirmez le mot de passe :</label>
-						<input type="password" id="mdp_repeat" name="mdp_repeat" required oninput="check(this)">
-					</li>
-				-->	
 					<li>
 						<input type="submit" value="Valider" class="validerButton" /> 
 					</li>

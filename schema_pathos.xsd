@@ -2,7 +2,7 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-	<xs:element name="pathologie" type="pathologie"	nillable="false" type="liste_pathos" />
+	<xs:element name="pathologie" type="pathologie"	nillable="false" />
 	
 	<xs:complexType name="pathologie">
 			<xs:complexContent>
