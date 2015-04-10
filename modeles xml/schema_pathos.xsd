@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="liste_pathos" nillable="false" type="liste_pathos" />
+
+	<xs:complexType name="liste_pathos">   
+		<xs:sequence>
+			<xs:element name="pathologie" type="pathologie"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="pathologie">
+			<xs:complexContent>
+				<xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" />
+				<xsd:element name="type" type="xsd:string" minOccurs="1" maxOccurs="1" />
+				<xsd:element name="meridien" type="xsd:string" minOccurs="1" maxOccurs="1"  />
+				<xs:element name="symptomes" type="symptomes"
+				minOccurs="1" maxOccurs="1" />
+				<xs:attributeGroup ref="id" />
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name="symptomes">
+		<xs:sequence>
+			<xsd:element name="symptome" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:attributeGroup name="id">
+		<xs:attribute name="id" type="xs:integer" use="required"/><!-- identifiant unique de l'élément-->
+	</xs:attributeGroup>
+	
+</xs:schema>
