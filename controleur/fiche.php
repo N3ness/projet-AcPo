@@ -12,8 +12,7 @@ class Fiche
 		
 		$chaineXML = '<?xml version="1.0" encoding="UTF-8" ?>';
 		$chaineXML .= '<?xml-stylesheet type="text/xsl" href="patho.xsl" ?>';
-		$chaineXML = '<xs:schema xmlns:xs="schema_pathos.xsd">';
-		$chaineXML .= '<pathologie>';
+		$chaineXML .= '<pathologie xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="schema_pathos.xsd">';
 		$chaineXML .= '<description>'.$table[0]['Description'].'</description>';
 		$chaineXML .= '<meridien>'.$table[0]['Meridien'].'</meridien>';
 		$chaineXML .= '<symptomes>';
