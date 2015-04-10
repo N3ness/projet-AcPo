@@ -1,7 +1,4 @@
 h1,h2{
-color:green;
-background-color:lightgreen;
-width: 70mm;
 font-size: 14pt;
 text-align: center;
 line-height: 14pt;
@@ -10,12 +7,17 @@ font-family:Times, serif;
 }
 
 body{
-	width: 200mm;
+	width: 100%;
+	height: 100%;
+	color:black;
 	text-align: justify;
 	font-size: 12pt;
 	font-family:Times, serif;
 }
-
+a
+{
+	color:black;
+}
 #preamble{
 	display: none;
 }
@@ -30,12 +32,12 @@ body{
 	display: none;
 }
 
-nav
+nav,form,img,blockquote
 {
 	display : none;
 }
 
-form
+#titre_recherche
 {
 	display : none;
 }
