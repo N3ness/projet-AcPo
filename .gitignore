@@ -1,6 +1,6 @@
 ##### Projet AcPo####
 cache/*
-
+*.xml
 
 #################
 ## Eclipse
