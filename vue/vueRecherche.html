@@ -11,17 +11,17 @@
 				<caption>Résultat de la recherche</caption>
 				<thead>
 					<tr>
-						<th>Symptome</th>
-						<th>Meridien</th>
 						<th>Description</th>
+						<th>Meridien</th>
+						<th>Symptome</th>
 					</tr>
 				</thead>
 				<tbody>
 				{loop="listPathos"}
 					<tr>
-						<td>{$value.Symptome}</td>
-						<td>{$value.Meridien}</td>
 						<td>{$value.Description}</td>
+						<td>{$value.Meridien}</td>
+						<td>{$value.Symptome}</td>
 					</tr>
 				{/loop}
 				</tbody>

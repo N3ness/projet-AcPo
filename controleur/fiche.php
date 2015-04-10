@@ -12,6 +12,7 @@ class Fiche
 		
 		$chaineXML = '<?xml version="1.0" encoding="UTF-8" ?>';
 		$chaineXML .= '<?xml-stylesheet type="text/xsl" href="patho.xsl" ?>';
+		$chaineXML = '<xs:schema xmlns:xs="schema_pathos.xsd">';
 		$chaineXML .= '<pathologie>';
 		$chaineXML .= '<description>'.$table[0]['Description'].'</description>';
 		$chaineXML .= '<meridien>'.$table[0]['Meridien'].'</meridien>';
