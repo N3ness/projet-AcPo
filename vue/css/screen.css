@@ -81,6 +81,7 @@ blockquote{
 }
 table{
 	border-collapse : collapse;
+	margin : auto;
 }
 td{
 	border: 0.1em darkslategrey solid;
