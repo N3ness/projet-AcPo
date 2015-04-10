@@ -1,6 +1,9 @@
-- Extraire le php des vues
-- Faire la recherche (avancée et normale)
-- Finir le modele
-- Enregistrer un utilisateur
-- Enregistrer le tableau de Patho en var de session
-- Et encore d'autres trucs a rajouter!
+//- Extraire le php des vues - DONE
+//- Faire la recherche (avancée et normale) - DONE
+//- Finir le modele - DONE
+//- Enregistrer un utilisateur - DONE
+//- Enregistrer le tableau de Patho en var de session - DONE (de manière différente)
+//- XML DONE (a	revoir vite fait si on a le temps
+- RSS
+- Url Rewriting pour faire joli
+- API REST
