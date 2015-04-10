@@ -2,6 +2,7 @@ body{
 	margin: 0px;
 	width: 100%;
 	font-family: Verdana, Arial, sans-serif;
+	font-size:0.75em;
 }
 header{
 	margin: 0px;
@@ -114,11 +115,21 @@ footer{
 /********** Phone et tablettes ************************/
 /******************************************************/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 730px) {
 nav ul li{
 	display: inline;
 	width: 20%;
 	height : 100%;
 	margin: none;
+}
+section{
+	display: block;
+	margin: 0px auto 0px auto;
+	width: 96%;
+	background: white;
+	padding: 1%;
+}
+table{
+	font-size : 70%;
 }
 }
