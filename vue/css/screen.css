@@ -94,6 +94,7 @@ form ul li{
 	display:inline-block;
 	width: 100%;
 	height: 1.5em;
+	margin-top: 1em;
 }
 form ul li label{
 	display:inline-block;
