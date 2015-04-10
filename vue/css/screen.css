@@ -24,7 +24,7 @@ nav ul{
 nav ul li{
 	display: inline-block;
 	width: 20%;
-	margin: none;
+	margin: 0em;
 }
 nav ul li a{
 	display: inline-block;
@@ -73,7 +73,7 @@ article{
 }
 
 blockquote{
-	font-size: 16 em;
+	font-size: 1em;
 	font-style: italic;
 	font-family: Times, serif;
 	text-align: center;
@@ -124,7 +124,7 @@ nav ul li{
 	display: inline;
 	width: 20%;
 	height : 100%;
-	margin: none;
+	margin: 0em;
 }
 section{
 	display: block;
