@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="pathologie" type="pathologie"	nillable="false" type="liste_pathos" />
+	
+	<xs:complexType name="pathologie">
+			<xs:complexContent>
+				<xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" />
+				<xsd:element name="meridien" type="xsd:string" minOccurs="1" maxOccurs="1"  />
+				<xs:element name="symptomes" type="symptomes" minOccurs="1" maxOccurs="1" />
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name="symptomes">
+		<xs:sequence>
+			<xsd:element name="symptome" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	
+</xs:schema>
