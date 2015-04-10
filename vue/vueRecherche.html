@@ -2,30 +2,33 @@
 {include="nav"}
 	<section>
 		<article>
-			<p>{if="($authenticated=='false')"}
+			{if="($authenticated=='false')"}
 				{include="rechercheImpossible"}
 			{else}
 				{include="recherche"}
 			{/if}
-			</p>
-			<h2>Résultat de la recherche</h2>
 			<table>
-				<tr>
-					<th>Symptome</th>
-					<th>Meridien</th>
-					<th>Description</th>
-					<th>Element</th>
-					<th>tags</th>
-				</tr>
+				<caption>Résultat de la recherche</caption>
+				<thead>
+					<tr>
+						<th>Symptome</th>
+						<th>Meridien</th>
+						<th>Description</th>
+						<th>Element</th>
+						<th>tags</th>
+					</tr>
+				</thead>
+				<tbody>
 				{loop="listPathos"}
 					<tr>
-					<td>{$value.Symptome}</td>
-					<td>{$value.Meridien}</td>
-					<td>{$value.Description}</td>
-					<td>{$value.Element}</td>
-					<td>{$value.tags}</td>
+						<td>{$value.Symptome}</td>
+						<td>{$value.Meridien}</td>
+						<td>{$value.Description}</td>
+						<td>{$value.Element}</td>
+						<td>{$value.tags}</td>
 					</tr>
 				{/loop}
+				</tbody>
 			</table>
 		</article>
 {include="footer"}
