@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "projet.dtd">
 <?xml-stylesheet type="text/xsl" href="patho.xsl" ?>
-<pathologie xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="schema_pathos.xsd"><description>voie luo du poumon pleine</description><meridien>Poumon</meridien><symptomes><symptome>Chaleur des mains et de l'éminence thénar</symptome></symptomes></pathologie>
+<pathologie><description>voie luo du poumon pleine</description><meridien>Poumon</meridien><symptomes><symptome>Chaleur des mains et de l'éminence thénar</symptome></symptomes></pathologie>

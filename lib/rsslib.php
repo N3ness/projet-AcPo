@@ -1,22 +1,4 @@
 <?php
-/*
-	RSS Extractor and Displayer
-	(c) 2007-2009  Scriptol.com - Licence Mozilla 1.1.
-	rsslib.php
-	
-	Requirements:
-	- PHP 5.
-	- A RSS feed.
-	
-	Using the library:
-	Insert this code into the page that displays the RSS feed:
-	
-	<?php
-	require_once("rsslib.php");
-	echo RSS_Display("http://www.xul.fr/rss.xml", 15);
-	?>
-	
-*/
 
 $RSS_Content = array();
 
