@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "projet.dtd">
 <?xml-stylesheet type="text/xsl" href="patho.xsl" ?>
-<pathologie xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="schema_pathos.xsd"><description>zang poumon plein</description><meridien>Poumon</meridien><symptomes><symptome>Épaule et dos douloureux</symptome><symptome>Nausée</symptome><symptome>Plénitude douloureuse de la poitrine (emphysème) et des côtes entraînant dyspnée et toux avec mucosités purulentes</symptome></symptomes></pathologie>
+<pathologie><description>zang poumon plein</description><meridien>Poumon</meridien><symptomes><symptome>Épaule et dos douloureux</symptome><symptome>Nausée</symptome><symptome>Plénitude douloureuse de la poitrine (emphysème) et des côtes entraînant dyspnée et toux avec mucosités purulentes</symptome></symptomes></pathologie>
